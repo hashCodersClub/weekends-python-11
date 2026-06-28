@@ -15,10 +15,15 @@ class Account:
     def show_balance(self):
         print(f"Your current balance is : {self.balance}")
 
+    def roi(self):
+        self.balance += self.balance * 6 /100
+        print("ROI added")
+        self.show_balance()
+
 
 hasib = Account("Hasib",9874563210)
 hasib.deposit()
-hasib.withdrawal()
-hasib.deposit()
-hasib.withdrawal()
-        
+hasib.roi()
+    
+
+# annual interest -> 6% increment
